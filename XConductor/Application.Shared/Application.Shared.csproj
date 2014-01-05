@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A320E158-AC7B-477D-9BA4-6E1AEAD13250}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XConductor.Application.Shared</RootNamespace>
+    <AssemblyName>XConductor.Application.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Abstractions\IApplicationServiceSettings.cs" />
+    <Compile Include="Service\Abstractions\IDelayServiceSettings.cs" />
+    <Compile Include="Service\Abstractions\IProcessingService.cs" />
+    <Compile Include="Service\Abstractions\IAudioService.cs" />
+    <Compile Include="Service\Abstractions\IDelayService.cs" />
+    <Compile Include="Service\Abstractions\IDelayServiceResults.cs" />
+    <Compile Include="Service\ApplicationServiceSettings.cs" />
+    <Compile Include="Service\DelayAlgorithmService.cs" />
+    <Compile Include="Service\DelayServiceSettings.cs" />
+    <Compile Include="Service\EventArgs\ProcessingEventArgs.cs" />
+    <Compile Include="Service\ProcessingService.cs" />
+    <Compile Include="Service\AudioService.cs" />
+    <Compile Include="Service\DelayService.cs" />
+    <Compile Include="Service\DelayServiceContext.cs" />
+    <Compile Include="Service\DelayServiceResults.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Seedwork\Domain.Seedwork.csproj">
+      <Project>{409c9792-63d5-4042-83ea-7781e4dbca96}</Project>
+      <Name>Domain.Seedwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.CrossCutting.Seedwork\Infrastructure.CrossCutting.Seedwork.csproj">
+      <Project>{07edc2c5-c527-45c7-95d0-16aa38dd0776}</Project>
+      <Name>Infrastructure.CrossCutting.Seedwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.CrossCutting.Shared\Infrastructure.CrossCutting.Shared.csproj">
+      <Project>{dc3ad4ad-760e-4974-ad82-c89f8f6fd3ec}</Project>
+      <Name>Infrastructure.CrossCutting.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

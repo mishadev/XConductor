@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E78761D7-A855-4326-84D8-2C42D9F81620}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XConductor.Domain.W8</RootNamespace>
+    <AssemblyName>XConductor.Domain.W8</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Capturing\CaptureSessionW8.cs" />
+    <Compile Include="Capturing\Settings\CaptureSettings.cs" />
+    <Compile Include="Capturing\Settings\CaptureSettingsService.cs" />
+    <Compile Include="Capturing\Settings\CaptureType.cs" />
+    <Compile Include="MediaFoundation\AudioSubtypes.cs" />
+    <Compile Include="MediaFoundation\IMFActivate.cs" />
+    <Compile Include="MediaFoundation\IMFAttributes.cs" />
+    <Compile Include="MediaFoundation\IMFByteStream.cs" />
+    <Compile Include="MediaFoundation\IMFCollection.cs" />
+    <Compile Include="MediaFoundation\IMFMediaBuffer.cs" />
+    <Compile Include="MediaFoundation\IMFMediaEvent.cs" />
+    <Compile Include="MediaFoundation\IMFMediaType.cs" />
+    <Compile Include="MediaFoundation\IMFReadWriteClassFactory.cs" />
+    <Compile Include="MediaFoundation\IMFSample.cs" />
+    <Compile Include="MediaFoundation\IMFSinkWriter.cs" />
+    <Compile Include="MediaFoundation\IMFSourceReader.cs" />
+    <Compile Include="MediaFoundation\IMFTransform.cs" />
+    <Compile Include="MediaFoundation\MediaEventType.cs" />
+    <Compile Include="MediaFoundation\MediaFoundationAttributes.cs" />
+    <Compile Include="MediaFoundation\MediaFoundationErrors.cs" />
+    <Compile Include="MediaFoundation\MediaFoundationHelpers.cs" />
+    <Compile Include="MediaFoundation\MediaFoundationInterop.cs" />
+    <Compile Include="MediaFoundation\MediaFoundationTransformCategories.cs" />
+    <Compile Include="MediaFoundation\MediaType.cs" />
+    <Compile Include="MediaFoundation\MediaTypes.cs" />
+    <Compile Include="MediaFoundation\MFT_INPUT_STREAM_INFO.cs" />
+    <Compile Include="MediaFoundation\MFT_MESSAGE_TYPE.cs" />
+    <Compile Include="MediaFoundation\MFT_OUTPUT_DATA_BUFFER.cs" />
+    <Compile Include="MediaFoundation\MFT_OUTPUT_STREAM_INFO.cs" />
+    <Compile Include="MediaFoundation\MFT_REGISTER_TYPE_INFO.cs" />
+    <Compile Include="MediaFoundation\MF_SINK_WRITER_STATISTICS.cs" />
+    <Compile Include="MediaFoundation\PropVariant.cs" />
+    <Compile Include="MediaFoundation\_MFT_ENUM_FLAG.cs" />
+    <Compile Include="MediaFoundation\_MFT_INPUT_STATUS_FLAGS.cs" />
+    <Compile Include="MediaFoundation\_MFT_INPUT_STREAM_INFO_FLAGS.cs" />
+    <Compile Include="MediaFoundation\_MFT_OUTPUT_DATA_BUFFER_FLAGS.cs" />
+    <Compile Include="MediaFoundation\_MFT_OUTPUT_STATUS_FLAGS.cs" />
+    <Compile Include="MediaFoundation\_MFT_OUTPUT_STREAM_INFO_FLAGS.cs" />
+    <Compile Include="MediaFoundation\_MFT_PROCESS_OUTPUT_FLAGS.cs" />
+    <Compile Include="MediaFoundation\_MFT_PROCESS_OUTPUT_STATUS.cs" />
+    <Compile Include="MediaFoundation\_MFT_SET_TYPE_FLAGS.cs" />
+    <Compile Include="Media\Reader\MediaFoundationReaderProvider.cs" />
+    <Compile Include="Media\Reader\MediaFoundationSampleReader.cs" />
+    <Compile Include="Media\Reader\Settings\AudioReaderSettings.cs" />
+    <Compile Include="Media\Reader\Settings\AudioReaderSettingsService.cs" />
+    <Compile Include="Media\Reader\Settings\MediaFoundationReaderSettings.cs" />
+    <Compile Include="Playback\AudioPlayerW8.cs" />
+    <Compile Include="Playback\Settings\AudioPlayerSettings.cs" />
+    <Compile Include="Playback\Settings\AudioPlayerSettingsService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Seedwork.WP8\Domain.Seedwork.WP8.csproj">
+      <Project>{068219E1-DD43-414F-A671-5169B41675F7}</Project>
+      <Name>Domain.Seedwork.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.Shared.WP8\Domain.Shared.WP8.csproj">
+      <Project>{63D8DCC6-D681-40C5-BEEF-AE952C450062}</Project>
+      <Name>Domain.Shared.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.CrossCutting.Seedwork.WP8\Infrastructure.CrossCutting.Seedwork.WP8.csproj">
+      <Project>{BA29A401-D0B8-440A-BD4B-45043BABF106}</Project>
+      <Name>Infrastructure.CrossCutting.Seedwork.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.CrossCutting.Shared.WP8\Infrastructure.CrossCutting.Shared.WP8.csproj">
+      <Project>{A62D2D61-F3E3-43C6-A007-C34332806574}</Project>
+      <Name>Infrastructure.CrossCutting.Shared.WP8</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

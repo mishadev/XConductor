@@ -1,0 +1,92 @@
+﻿Build started 10.04.2013 1:19:57.
+     1>Project "D:\Projects_Derijore\Media capture using capture device sample\C#,C++\MediaExtensions\Grayscale\Grayscale.vcxproj" on node 2 (Build target(s)).
+     1>Midl:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\midl.exe /metadata_dir "C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /winrt /W1 /nologo /char signed /env x64 /h "GrayscaleTransform.h" /tlb "x64\Debug\GrayscaleTransform.tlb" /enum_class /ns_prefix GrayscaleTransform.idl 
+         64 bit MIDLRT Processing .\GrayscaleTransform.idl
+         GrayscaleTransform.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\Windows.Media.idl
+         Windows.Media.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\inspectable.idl
+         inspectable.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\wtypes.idl
+         wtypes.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\wtypesbase.idl
+         wtypesbase.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\basetsd.h
+         basetsd.h
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\guiddef.h
+         guiddef.h
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\unknwn.idl
+         unknwn.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\hstring.idl
+         hstring.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\AsyncInfo.idl
+         AsyncInfo.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\EventToken.idl
+         EventToken.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\Windows.Foundation.idl
+         Windows.Foundation.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\IVectorChangedEventArgs.idl
+         IVectorChangedEventArgs.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\oaidl.idl
+         oaidl.idl
+         64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\objidl.idl
+         objidl.idl
+         64 bit Processing C:\Users\misha\AppData\Local\Temp\GrayscaleTransform.idl-027af89a
+         GrayscaleTransform.idl-027af89a
+         64 bit Processing .\Windows.Media.idl-1f62f97e
+         Windows.Media.idl-1f62f97e
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\inspectable.idl
+         inspectable.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\wtypes.idl
+         wtypes.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\wtypesbase.idl
+         wtypesbase.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\basetsd.h
+         basetsd.h
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\guiddef.h
+         guiddef.h
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\unknwn.idl
+         unknwn.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\hstring.idl
+         hstring.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\AsyncInfo.idl
+         AsyncInfo.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\EventToken.idl
+         EventToken.idl
+         64 bit Processing .\Windows.Foundation.idl-4cabf7c2
+         Windows.Foundation.idl-4cabf7c2
+         64 bit Processing .\IVectorChangedEventArgs.idl-e722877d
+         IVectorChangedEventArgs.idl-e722877d
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\oaidl.idl
+         oaidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\objidl.idl
+         objidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\oaidl.acf
+         oaidl.acf
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"D:\Projects_Derijore\Media capture using capture device sample\C#,C++\MediaExtensions\Grayscale\\" /Ix64\Debug\ /I"D:\Projects_Derijore\Media capture using capture device sample\C#,C++\MediaExtensions\Grayscale\\" /I"Generated Files\\" /Ix64\Debug\ /I"D:\Projects_Derijore\Media capture using capture device sample\C#,C++\MediaExtensions\Grayscale\\..\Common" /Zi /nologo /W3 /WX- /sdl /MP /Od /D _WINRT_DLL /D _DEBUG /D _WINDOWS /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt dllmain.cpp Grayscale.cpp
+         dllmain.cpp
+         Grayscale.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects_Derijore\Media capture using capture device sample\C#,C++\x64\Debug\Grayscale\GrayscaleTransform.dll" /INCREMENTAL /NOLOGO runtimeobject.lib kernel32.lib mf.lib mfuuid.lib mfplat.lib /DEF:"Grayscale.def" /MANIFEST:NO /DEBUG /PDB:"D:\Projects_Derijore\Media capture using capture device sample\C#,C++\x64\Debug\Grayscale\GrayscaleTransform.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /APPCONTAINER /WINMD /WINMDFILE:"D:\Projects_Derijore\Media capture using capture device sample\C#,C++\x64\Debug\Grayscale\GrayscaleTransform.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X64 /DLL x64\Debug\dllmain.obj
+         x64\Debug\Grayscale.obj
+            Creating library D:\Projects_Derijore\Media capture using capture device sample\C#,C++\x64\Debug\Grayscale\GrayscaleTransform.lib and object D:\Projects_Derijore\Media capture using capture device sample\C#,C++\x64\Debug\Grayscale\GrayscaleTransform.exp
+         Grayscale.vcxproj -> D:\Projects_Derijore\Media capture using capture device sample\C#,C++\x64\Debug\Grayscale\GrayscaleTransform.dll
+       CustomBuildStep:
+         mdmerge -metadata_dir "C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" -o "D:\Projects_Derijore\Media capture using capture device sample\C#,C++\x64\Debug\Grayscale" -i "D:\Projects_Derijore\Media capture using capture device sample\C#,C++\MediaExtensions\Grayscale" -v -partial
+         :VCEnd
+         Microsoft(R) Metadata Merge Utility Version 8.0.18.
+         
+         
+         Load input metadata file C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral\Windows.winmd.
+         Processed input metadata file D:\Projects_Derijore\Media capture using capture device sample\C#,C++\MediaExtensions\Grayscale\GrayscaleTransform.winmd.
+         Saved output metadata file GrayscaleTransform.winmd.
+         Validating metadata file D:\Projects_Derijore\Media capture using capture device sample\C#,C++\x64\Debug\Grayscale\GrayscaleTransform.winmd.
+       _GenerateProjectPriFileCore:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\MakePri.exe New -ProjectRoot "D:\Projects_Derijore\Media capture using capture device sample\C#,C++\MediaExtensions\Grayscale\\" -ConfigXml x64\Debug\priconfig.xml -OutputFile "D:\Projects_Derijore\Media capture using capture device sample\C#,C++\x64\Debug\Grayscale\GrayscaleTransform.pri" -IndexName GrayscaleTransform -Verbose -Overwrite  
+     1>Done Building Project "D:\Projects_Derijore\Media capture using capture device sample\C#,C++\MediaExtensions\Grayscale\Grayscale.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.66

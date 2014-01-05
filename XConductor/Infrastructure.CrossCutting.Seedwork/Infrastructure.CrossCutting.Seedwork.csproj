@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07EDC2C5-C527-45C7-95D0-16AA38DD0776}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XConductor.Infrastructure.CrossCutting.Seedwork</RootNamespace>
+    <AssemblyName>XConductor.Infrastructure.CrossCutting.Seedwork</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Adapter\ITypeAdapter.cs" />
+    <Compile Include="Adapter\ITypeAdapterFactory.cs" />
+    <Compile Include="Adapter\TypeAdapterFactory.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\ILoggerFactory.cs" />
+    <Compile Include="Logging\LoggerFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\IByteReadable.cs" />
+    <Compile Include="Utils\IDataObservable.cs" />
+    <Compile Include="Utils\IReadable.cs" />
+    <Compile Include="Utils\ISubscribtion.cs" />
+    <Compile Include="Utils\ISubscriber.cs" />
+    <Compile Include="Utils\IWrapper.cs" />
+    <Compile Include="Utils\OrdinalNumbers.cs" />
+    <Compile Include="Validator\DataAnnotations\IValidatableObject.cs" />
+    <Compile Include="Validator\DataAnnotations\IValidationResult.cs" />
+    <Compile Include="Validator\EntityValidatorFactory.cs" />
+    <Compile Include="Validator\IEntityValidator.cs" />
+    <Compile Include="Validator\IEntityValidatorFactory.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

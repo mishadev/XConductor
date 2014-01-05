@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62DB7566-E1AB-4CE5-A8B1-9982AEF64A25}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XConductor.Infrastructure.CrossCutting.Seedwork.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>XConductor.Infrastructure.CrossCutting.Seedwork.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Adapter\ITypeAdapter.cs">
+      <Link>Adapter\ITypeAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Adapter\ITypeAdapterFactory.cs">
+      <Link>Adapter\ITypeAdapterFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Adapter\TypeAdapterFactory.cs">
+      <Link>Adapter\TypeAdapterFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Logging\ILogger.cs">
+      <Link>Logging\ILogger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Logging\ILoggerFactory.cs">
+      <Link>Logging\ILoggerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Logging\LoggerFactory.cs">
+      <Link>Logging\LoggerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\IByteReadable.cs">
+      <Link>Utils\IByteReadable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\IDataObservable.cs">
+      <Link>Utils\IDataObservable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\IReadable.cs">
+      <Link>Utils\IReadable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\ISubscribtion.cs">
+      <Link>Utils\ISubscribtion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\ISubscriber.cs">
+      <Link>Utils\ISubscriber.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\IWrapper.cs">
+      <Link>Utils\IWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\OrdinalNumbers.cs">
+      <Link>Utils\OrdinalNumbers.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Validator\DataAnnotations\IValidatableObject.cs">
+      <Link>Validator\DataAnnotations\IValidatableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Validator\DataAnnotations\IValidationResult.cs">
+      <Link>Validator\DataAnnotations\IValidationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Validator\EntityValidatorFactory.cs">
+      <Link>Validator\EntityValidatorFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Validator\IEntityValidator.cs">
+      <Link>Validator\IEntityValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Validator\IEntityValidatorFactory.cs">
+      <Link>Validator\IEntityValidatorFactory.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+</Project>

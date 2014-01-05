@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{28B90A48-17E6-466B-8E97-D500B080C97D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Shared", "..\XConductor\Application.Shared\Application.Shared.csproj", "{A320E158-AC7B-477D-9BA4-6E1AEAD13250}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{E7FC737F-46C6-45D8-B7BC-5031C4E80ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Seedwork", "..\XConductor\Domain.Seedwork\Domain.Seedwork.csproj", "{409C9792-63D5-4042-83EA-7781E4DBCA96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Shared", "..\XConductor\Domain.Shared\Domain.Shared.csproj", "{EEDD2CFF-BD30-492B-B488-A2AE7094D14F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B62F7F31-91E4-45D3-83FE-3C9F4AB6102D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{FE8BF7B4-BDA5-4EDA-965E-437C940E0F51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.CrossCutting.Seedwork", "..\XConductor\Infrastructure.CrossCutting.Seedwork\Infrastructure.CrossCutting.Seedwork.csproj", "{07EDC2C5-C527-45C7-95D0-16AA38DD0776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.CrossCutting.Shared", "..\XConductor\Infrastructure.CrossCutting.Shared\Infrastructure.CrossCutting.Shared.csproj", "{DC3AD4AD-760E-4974-AD82-C89F8F6FD3EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{ED7B1172-278D-4776-AE92-AFA4865745B4}"
+	ProjectSection(SolutionItems) = preProject
+		..\tools\PowerShell-Helpers\Mirroring-Module\mirror-iOS.bat = ..\tools\PowerShell-Helpers\Mirroring-Module\mirror-iOS.bat
+		..\tools\PowerShell-Helpers\Mirroring-Module\mirror-W8.bat = ..\tools\PowerShell-Helpers\Mirroring-Module\mirror-W8.bat
+		..\tools\PowerShell-Helpers\Mirroring-Module\mirror-WP8.bat = ..\tools\PowerShell-Helpers\Mirroring-Module\mirror-WP8.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A320E158-AC7B-477D-9BA4-6E1AEAD13250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A320E158-AC7B-477D-9BA4-6E1AEAD13250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A320E158-AC7B-477D-9BA4-6E1AEAD13250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A320E158-AC7B-477D-9BA4-6E1AEAD13250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{409C9792-63D5-4042-83EA-7781E4DBCA96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409C9792-63D5-4042-83EA-7781E4DBCA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409C9792-63D5-4042-83EA-7781E4DBCA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409C9792-63D5-4042-83EA-7781E4DBCA96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDD2CFF-BD30-492B-B488-A2AE7094D14F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDD2CFF-BD30-492B-B488-A2AE7094D14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDD2CFF-BD30-492B-B488-A2AE7094D14F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDD2CFF-BD30-492B-B488-A2AE7094D14F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07EDC2C5-C527-45C7-95D0-16AA38DD0776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EDC2C5-C527-45C7-95D0-16AA38DD0776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EDC2C5-C527-45C7-95D0-16AA38DD0776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EDC2C5-C527-45C7-95D0-16AA38DD0776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC3AD4AD-760E-4974-AD82-C89F8F6FD3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3AD4AD-760E-4974-AD82-C89F8F6FD3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3AD4AD-760E-4974-AD82-C89F8F6FD3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3AD4AD-760E-4974-AD82-C89F8F6FD3EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A320E158-AC7B-477D-9BA4-6E1AEAD13250} = {28B90A48-17E6-466B-8E97-D500B080C97D}
+		{409C9792-63D5-4042-83EA-7781E4DBCA96} = {E7FC737F-46C6-45D8-B7BC-5031C4E80ED0}
+		{EEDD2CFF-BD30-492B-B488-A2AE7094D14F} = {E7FC737F-46C6-45D8-B7BC-5031C4E80ED0}
+		{FE8BF7B4-BDA5-4EDA-965E-437C940E0F51} = {B62F7F31-91E4-45D3-83FE-3C9F4AB6102D}
+		{07EDC2C5-C527-45C7-95D0-16AA38DD0776} = {FE8BF7B4-BDA5-4EDA-965E-437C940E0F51}
+		{DC3AD4AD-760E-4974-AD82-C89F8F6FD3EC} = {FE8BF7B4-BDA5-4EDA-965E-437C940E0F51}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Application.Seedwork\Application.Seedwork.csproj
+	EndGlobalSection
+EndGlobal

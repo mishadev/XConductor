@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40EF99F8-708F-41CD-819F-6770AD0A4AB5}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XConductor.Domain.Seedwork.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>XConductor.Domain.Seedwork.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+    <DefineConstants>MONOTOUCH;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Abstractions\IChainedDomainService.cs">
+      <Link>Abstractions\IChainedDomainService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Abstractions\IObservableDomainService.cs">
+      <Link>Abstractions\IObservableDomainService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Abstractions\IDomainService.cs">
+      <Link>Abstractions\IDomainService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Abstractions\Settings\IChainedDomainSettings.cs">
+      <Link>Abstractions\Settings\IChainedDomainSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Abstractions\Settings\ISettings.cs">
+      <Link>Abstractions\Settings\ISettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Abstractions\Settings\ISettingsService.cs">
+      <Link>Abstractions\Settings\ISettingsService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Analyzations\IAudioAnalyzer.cs">
+      <Link>Analyzations\IAudioAnalyzer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Analyzations\Settings\IAudioAnalyzatorSettings.cs">
+      <Link>Analyzations\Settings\IAudioAnalyzatorSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Extensions\DomainServiceEx.cs">
+      <Link>Extensions\DomainServiceEx.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Generating\IToneGenerator.cs">
+      <Link>Generating\IToneGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Media\EventArgs\MediaEventArgs.cs">
+      <Link>Media\EventArgs\MediaEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Media\EventArgs\MediaRuntimeExceptionEventArgs.cs">
+      <Link>Media\EventArgs\MediaRuntimeExceptionEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Media\Exceptions\CaptureSessionRuntimeException.cs">
+      <Link>Media\Exceptions\CaptureSessionRuntimeException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Capturing\ICaptureSession.cs">
+      <Link>Capturing\ICaptureSession.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Common\DataEventArgs.cs">
+      <Link>Common\DataEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Media\AudioFormats.cs">
+      <Link>Media\AudioFormats.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Media\IAudioFormatDescription.cs">
+      <Link>Media\IAudioFormatDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Media\Reader\IAudioReader.cs">
+      <Link>Media\Reader\IAudioReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Media\Writer\IAudioWriter.cs">
+      <Link>Media\Writer\IAudioWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Media\Writer\Settings\IAudioWriterSettings.cs">
+      <Link>Media\Writer\Settings\IAudioWriterSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Playback\IAudioPlayer.cs">
+      <Link>Playback\IAudioPlayer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Transformations\IAudioTransformator.cs">
+      <Link>Transformations\IAudioTransformator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Domain.Seedwork\Transformations\Settings\IAudioTransformatorSettings.cs">
+      <Link>Transformations\Settings\IAudioTransformatorSettings.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.CrossCutting.Seedwork.iOS\Infrastructure.CrossCutting.Seedwork.iOS.csproj">
+      <Project>{62DB7566-E1AB-4CE5-A8B1-9982AEF64A25}</Project>
+      <Name>Infrastructure.CrossCutting.Seedwork.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+</Project>

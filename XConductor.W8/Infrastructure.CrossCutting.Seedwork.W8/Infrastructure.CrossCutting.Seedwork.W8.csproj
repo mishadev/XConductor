@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CEF3E11-F71B-463E-88C0-084D0D0DCDCD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XConductor.Infrastructure.CrossCutting.Seedwork.W8</RootNamespace>
+    <AssemblyName>XConductor.Infrastructure.CrossCutting.Seedwork.W8</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Adapter\ITypeAdapter.cs">
+      <Link>Adapter\ITypeAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Adapter\ITypeAdapterFactory.cs">
+      <Link>Adapter\ITypeAdapterFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Adapter\TypeAdapterFactory.cs">
+      <Link>Adapter\TypeAdapterFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Logging\ILogger.cs">
+      <Link>Logging\ILogger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Logging\ILoggerFactory.cs">
+      <Link>Logging\ILoggerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Logging\LoggerFactory.cs">
+      <Link>Logging\LoggerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\IByteReadable.cs">
+      <Link>Utils\IByteReadable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\IDataObservable.cs">
+      <Link>Utils\IDataObservable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\IReadable.cs">
+      <Link>Utils\IReadable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\ISubscribtion.cs">
+      <Link>Utils\ISubscribtion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Utils\ISubscriber.cs">
+      <Link>Utils\ISubscriber.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Validator\DataAnnotations\IValidatableObject.cs">
+      <Link>Validator\DataAnnotations\IValidatableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Validator\DataAnnotations\IValidationResult.cs">
+      <Link>Validator\DataAnnotations\IValidationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Validator\EntityValidatorFactory.cs">
+      <Link>Validator\EntityValidatorFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Validator\IEntityValidator.cs">
+      <Link>Validator\IEntityValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Seedwork\Validator\IEntityValidatorFactory.cs">
+      <Link>Validator\IEntityValidatorFactory.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

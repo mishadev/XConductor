@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{409C9792-63D5-4042-83EA-7781E4DBCA96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XConductor.Domain.Seedwork</RootNamespace>
+    <AssemblyName>XConductor.Domain.Seedwork</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Abstractions\IChainedDomainService.cs" />
+    <Compile Include="Abstractions\IObservableDomainService.cs" />
+    <Compile Include="Abstractions\IDomainService.cs" />
+    <Compile Include="Abstractions\Settings\IChainedDomainSettings.cs" />
+    <Compile Include="Abstractions\Settings\ISettings.cs" />
+    <Compile Include="Abstractions\Settings\ISettingsService.cs" />
+    <Compile Include="Analyzations\IAudioAnalyzer.cs" />
+    <Compile Include="Analyzations\Settings\IAudioAnalyzatorSettings.cs" />
+    <Compile Include="Extensions\DomainServiceEx.cs" />
+    <Compile Include="Generating\IToneGenerator.cs" />
+    <Compile Include="Media\EventArgs\MediaEventArgs.cs" />
+    <Compile Include="Media\EventArgs\MediaRuntimeExceptionEventArgs.cs" />
+    <Compile Include="Media\Exceptions\CaptureSessionRuntimeException.cs" />
+    <Compile Include="Capturing\ICaptureSession.cs" />
+    <Compile Include="Common\DataEventArgs.cs" />
+    <Compile Include="Media\AudioFormats.cs" />
+    <Compile Include="Media\IAudioFormatDescription.cs" />
+    <Compile Include="Media\Reader\IAudioReader.cs" />
+    <Compile Include="Media\Writer\IAudioWriter.cs" />
+    <Compile Include="Media\Writer\Settings\IAudioWriterSettings.cs" />
+    <Compile Include="Playback\IAudioPlayer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transformations\IAudioTransformator.cs" />
+    <Compile Include="Transformations\Settings\IAudioTransformatorSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.CrossCutting.Seedwork\Infrastructure.CrossCutting.Seedwork.csproj">
+      <Project>{07edc2c5-c527-45c7-95d0-16aa38dd0776}</Project>
+      <Name>Infrastructure.CrossCutting.Seedwork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A62D2D61-F3E3-43C6-A007-C34332806574}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infrastructure.CrossCutting.Shared.WP8</RootNamespace>
+    <AssemblyName>Infrastructure.CrossCutting.Shared.WP8</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Utils\Abstractions\BaseSynchronizator.cs">
+      <Link>Utils\Abstractions\BaseSynchronizator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Utils\PushSynchronizator.cs">
+      <Link>Utils\PushSynchronizator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Utils\FieldDescription.cs">
+      <Link>Utils\FieldDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Utils\PullSynchronizator.cs">
+      <Link>Utils\PullSynchronizator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Utils\Subscribtion.cs">
+      <Link>Utils\Subscribtion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Utils\Subscriber.cs">
+      <Link>Utils\Subscriber.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Utils\TaskEx.cs">
+      <Link>Utils\TaskEx.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Validator\DataAnnotationsEntityValidator.cs">
+      <Link>Validator\DataAnnotationsEntityValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Validator\DataAnnotationsEntityValidatorFactory.cs">
+      <Link>Validator\DataAnnotationsEntityValidatorFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Validator\DataAnnotations\GenericValidationAttribute.cs">
+      <Link>Validator\DataAnnotations\GenericValidationAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Validator\DataAnnotations\GenericValidationComparation.cs">
+      <Link>Validator\DataAnnotations\GenericValidationComparation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Validator\DataAnnotations\RequaredAttribute.cs">
+      <Link>Validator\DataAnnotations\RequaredAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Validator\DataAnnotations\ValidatableObject.cs">
+      <Link>Validator\DataAnnotations\ValidatableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Validator\DataAnnotations\ValidationAttribute.cs">
+      <Link>Validator\DataAnnotations\ValidationAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\XConductor\Infrastructure.CrossCutting.Shared\Validator\DataAnnotations\ValidationResult.cs">
+      <Link>Validator\DataAnnotations\ValidationResult.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.CrossCutting.Seedwork.WP8\Infrastructure.CrossCutting.Seedwork.WP8.csproj">
+      <Project>{BA29A401-D0B8-440A-BD4B-45043BABF106}</Project>
+      <Name>Infrastructure.CrossCutting.Seedwork.WP8</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

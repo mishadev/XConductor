@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC3AD4AD-760E-4974-AD82-C89F8F6FD3EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XConductor.Infrastructure.CrossCutting.Shared</RootNamespace>
+    <AssemblyName>XConductor.Infrastructure.CrossCutting.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Abstractions\BaseSynchronizator.cs" />
+    <Compile Include="Utils\PushSynchronizator.cs" />
+    <Compile Include="Utils\FieldDescription.cs" />
+    <Compile Include="Utils\PullSynchronizator.cs" />
+    <Compile Include="Utils\Subscribtion.cs" />
+    <Compile Include="Utils\Subscriber.cs" />
+    <Compile Include="Validator\DataAnnotationsEntityValidator.cs" />
+    <Compile Include="Validator\DataAnnotationsEntityValidatorFactory.cs" />
+    <Compile Include="Validator\DataAnnotations\GenericValidationAttribute.cs" />
+    <Compile Include="Validator\DataAnnotations\GenericValidationComparation.cs" />
+    <Compile Include="Validator\DataAnnotations\RequaredAttribute.cs" />
+    <Compile Include="Validator\DataAnnotations\ValidatableObject.cs" />
+    <Compile Include="Validator\DataAnnotations\ValidationAttribute.cs" />
+    <Compile Include="Validator\DataAnnotations\ValidationResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.CrossCutting.Seedwork\Infrastructure.CrossCutting.Seedwork.csproj">
+      <Project>{07edc2c5-c527-45c7-95d0-16aa38dd0776}</Project>
+      <Name>Infrastructure.CrossCutting.Seedwork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
